@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Soundboard</title>
+    <style>
+        /* CSS Styles */
+        button {
+            margin: 10px;
+            padding: 10px;
+            /* More styling */
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Buttons -->
+    <button id="sound1">Carl Sagan</button>
+    <button id="sound2">Monster Energy</button>
+	<button id="sound3">Hmm.</button>
+	<button id="sound4">Jesse Michels</button>
+	<button id="sound5">Joe's Theory</button>
+	<button id="sound6">This is trippy</button>
+    <!-- More buttons -->
+
+    <!-- Hidden Audio Elements -->
+    <audio id="audio1" src="soundboard/clips/i_like_carl.mp3"></audio>
+    <audio id="audio2" src="soundboard/clips/energy.mp3"></audio>
+	<audio id="audio3" src="soundboard/clips/hmm.mp3"></audio>
+	<audio id="audio4" src="soundboard/clips/frog.mp3"></audio>
+	<audio id="audio5" src="soundboard/clips/joes_theory.mp3"></audio>
+	<audio id="audio6" src="soundboard/clips/trippy.mp3"></audio>
+    <!-- More audio elements -->
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("sound1").addEventListener("click", function(){
+            document.getElementById("audio1").play();
+        });
+
+        document.getElementById("sound2").addEventListener("click", function(){
+            document.getElementById("audio2").play();
+        });
+		
+		 document.getElementById("sound3").addEventListener("click", function(){
+            document.getElementById("audio3").play();
+        });
+		
+		 document.getElementById("sound4").addEventListener("click", function(){
+            document.getElementById("audio4").play();
+        });
+		
+		 document.getElementById("sound5").addEventListener("click", function(){
+            document.getElementById("audio5").play();
+        });
+		
+		 document.getElementById("sound6").addEventListener("click", function(){
+            document.getElementById("audio6").play();
+        });
+
+        // More event listeners
+    </script>
+</body>
+</html>
